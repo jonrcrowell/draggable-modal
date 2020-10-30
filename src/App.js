@@ -22,7 +22,22 @@ const App = () => {
 
   return (
     <>
-      <button onClick={showModal}>Open Modal</button>
+      <div className="description">
+        Configurable modal that can be used to edit plans
+        <ul>
+          {" "}
+          <li>
+            draggable to expose supporting data that may be hidden beneath it
+          </li>
+          <li>mask behind to let user know it is in fact a modal</li>
+          <li>
+            mask opacity can be modified to allow underlying screen to be
+            visible
+          </li>
+          <li>x to close in title bar can be hidden</li>
+        </ul>
+        <button onClick={showModal}>Open Modal</button>
+      </div>
       <Modal
         title={
           <div
